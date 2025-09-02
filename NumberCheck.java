@@ -4,18 +4,15 @@ public class NumberCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Input number
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
-
-        // Check Even or Odd using if-else
+        
         if (num % 2 == 0) {
             System.out.println(num + " is Even");
         } else {
             System.out.println(num + " is Odd");
         }
 
-        // Check Prime or Not
         boolean isPrime = true;
         if (num <= 1) {
             isPrime = false;
@@ -34,7 +31,6 @@ public class NumberCheck {
             System.out.println(num + " is not a Prime number");
         }
 
-        // Map number to weekday using switch-case
         switch (num) {
             case 1:
                 System.out.println("Monday");
@@ -64,4 +60,5 @@ public class NumberCheck {
         sc.close();
     }
 }
+
 
